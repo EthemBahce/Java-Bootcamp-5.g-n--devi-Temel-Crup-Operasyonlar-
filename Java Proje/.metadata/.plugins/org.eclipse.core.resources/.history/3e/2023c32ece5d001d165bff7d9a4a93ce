@@ -1,0 +1,8 @@
+package Kodlama.io.Devs.business.concretes.responses;
+
+public class GetAllLanguageResponses {
+
+	private int id;
+	private String name;
+	
+}

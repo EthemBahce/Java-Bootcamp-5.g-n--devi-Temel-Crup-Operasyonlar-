@@ -1,0 +1,15 @@
+package Kodlama.io.Devs.business.abstracts;
+
+import java.util.List;
+
+import Kodlama.io.Devs.entities.Language;
+
+public interface IService {
+	
+	List<Language> getAll();
+	List<Language> add(int id, String name);
+	List<Language> update(int index,int id, String name);
+	List<Language> delete(int index);
+
+
+}

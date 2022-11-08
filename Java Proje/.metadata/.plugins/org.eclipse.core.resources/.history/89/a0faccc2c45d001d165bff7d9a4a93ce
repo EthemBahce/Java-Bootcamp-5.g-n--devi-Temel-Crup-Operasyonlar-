@@ -1,0 +1,65 @@
+package Kodlama.io.Devs.dataAccess.concretes;
+
+/*import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import Kodlama.io.Devs.dataAccess.abstracts.IRepository;
+import Kodlama.io.Devs.entities.Language;
+*/
+
+@Repository
+public class InMemoryRepository {
+	
+	/*private List<Language> languages;
+	
+	public InMemoryRepository(List<Language> languages) {
+		
+		this.languages = languages;
+		
+	}
+
+	@Override
+	public List<Language> getAll() {
+		
+		return languages;
+	}
+	
+
+	@Override
+	public Language getId(int index) {
+		
+		
+		return languages.get(index);
+	}
+	
+
+	@Override
+	public List<Language> addMethods(int id, String name) {
+		
+		languages.add(new Language(id, name));
+        return languages ;
+	}
+
+	
+
+	@Override
+	public List<Language> deleteMethods(int index) {
+		languages.remove(index);
+		return languages;
+	}
+
+	@Override
+	public List<Language> updateMethods(int index, int id, String name) {
+        languages.set(index, new Language(id, name));
+		
+		return languages;
+	} */
+	
+	
+	
+	
+	
+	
+
+}

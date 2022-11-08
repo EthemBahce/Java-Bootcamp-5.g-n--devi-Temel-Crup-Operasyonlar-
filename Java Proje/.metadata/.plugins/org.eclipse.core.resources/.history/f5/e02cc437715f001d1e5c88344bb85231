@@ -1,0 +1,11 @@
+package Kodlama.io.Devs.business.concretes.responses;
+
+import Kodlama.io.Devs.entities.Language;
+
+public class GetAllItemsResponses {
+
+	
+	private int id;
+	private String name;
+	private Language language;
+}

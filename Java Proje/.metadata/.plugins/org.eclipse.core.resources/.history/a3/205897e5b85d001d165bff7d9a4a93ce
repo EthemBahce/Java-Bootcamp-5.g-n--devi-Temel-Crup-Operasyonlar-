@@ -1,0 +1,23 @@
+package Kodlama.io.Devs.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Items {
+	
+	
+	private int id;
+	private String name;
+	
+	
+	public Items() {
+		
+	}
+	
+	
+
+	
+    
+	
+
+}

@@ -1,0 +1,18 @@
+package Kodlama.io.Devs.business.abstracts;
+
+import java.util.List;
+
+import Kodlama.io.Devs.business.concretes.request.CreateItemsRequest;
+
+import Kodlama.io.Devs.business.concretes.responses.GetAllItemsResponses;
+
+
+public interface ItemIService {
+	
+	
+	List<GetAllItemsResponses> getAll();
+    void add(CreateItemsRequest createItemsRequest);
+    void update(int id, CreateLanguageRequest createLanguageRequest);
+    void delete(int id);
+
+}

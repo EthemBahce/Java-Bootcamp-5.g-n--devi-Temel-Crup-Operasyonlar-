@@ -1,0 +1,43 @@
+package Kodlama.io.Devs.business.concretes;
+
+import java.util.List;
+
+import Kodlama.io.Devs.business.abstracts.ItemIService;
+import Kodlama.io.Devs.business.concretes.request.CreateItemsRequest;
+import Kodlama.io.Devs.business.concretes.responses.GetAllItemsResponses;
+import Kodlama.io.Devs.dataAccess.abstracts.ItemsRepository;
+
+public class ItemsServiceManager implements ItemIService {
+	
+	private final ItemsRepository itemsRepository;
+	
+	public ItemsServiceManager(ItemsRepository itemsRepository) {
+		this.itemsRepository = itemsRepository;
+	}
+	
+
+	@Override
+	public List<GetAllItemsResponses> getAll() {
+		
+		return null;
+	}
+
+	@Override
+	public void add(CreateItemsRequest createItemsRequest) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(int id, CreateItemsRequest createItemsRequest) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

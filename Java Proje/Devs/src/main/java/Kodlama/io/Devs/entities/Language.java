@@ -1,0 +1,89 @@
+package Kodlama.io.Devs.entities;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table(name = "LANGUAGE")
+public class Language {
+	
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private int id;
+	
+	
+	@Column(name = "name")
+	private String name;
+	
+	
+	@JsonIgnore
+	@OneToMany(mappedBy = "language", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Items> items;
+
+
+	public Language() {
+		
+	}
+
+
+	public Language(int id, String name, List<Items> items) {
+		
+		this.id = id;
+		this.name = name;
+		this.items = items;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public List<Items> getItems() {
+		return items;
+	}
+
+
+	public void setItems(List<Items> items) {
+		this.items = items;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

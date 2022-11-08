@@ -1,0 +1,12 @@
+package Kodlama.io.Devs.business.concretes.request;
+
+import Kodlama.io.Devs.entities.Language;
+
+public class CreateItemsRequest {
+	
+	
+	private int id;
+	private String name;
+	private Language language;
+
+}

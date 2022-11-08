@@ -1,0 +1,18 @@
+package Kodlama.io.Devs.webApi.Controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import Kodlama.io.Devs.business.abstracts.ItemIService;
+
+@RestController
+@RequestMapping("/api/ItemsController")
+public class ItemsController {
+
+	private final ItemIService itemIService;
+	
+	public ItemsController(ItemIService itemIService) {
+		this.itemIService = itemIService;
+	}
+	
+}

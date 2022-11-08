@@ -1,0 +1,15 @@
+package Kodlama.io.Devs.dataAccess.abstracts;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import Kodlama.io.Devs.entities.Language;
+
+public interface ILanguageRepository extends JpaRepository<Language, Integer>{
+	
+	/*List<Language> getAll();
+	Language getId(int index);
+	List<Language> addMethods(int id, String name);
+	List<Language> updateMethods(int index,int id, String name);
+	List<Language> deleteMethods(int index);*/
+
+}

@@ -1,0 +1,5 @@
+package Kodlama.io.Devs.business.concretes.request;
+
+public class CreateLanguageRequest {
+
+}

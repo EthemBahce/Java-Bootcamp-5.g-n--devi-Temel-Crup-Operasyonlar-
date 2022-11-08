@@ -1,0 +1,19 @@
+package Kodlama.io.Devs.entities;
+
+public class Items {
+	
+	private String name;
+	
+	
+
+	public Items() {
+		
+	}
+
+    public Items(String name) {
+		
+		this.name = name;
+	}
+	
+
+}
